@@ -22,7 +22,7 @@ export const putDb = async (content) => {
   // create object store
   const store = tx.objectStore('jate');
   // use put method to add in id and value
-  const request = store.put({ id: id, value: value });
+  const request = store.put({ id: 1, value: content });
   // await req and save to result variable, then console log to confirm it was saved
   const result = await request;
   console.log('data was saved to the jate database.', result);
